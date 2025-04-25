@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img class="sets" src="Screenshot 2025-03-31 113824.png" alt="Company Logo">
+            </a>
+            <div class="nav-links">
+                <ul class="search-bars ">
+                    <li class="hover-link nav-item" id="Technoloy" onclick="onNavItemClick('technology')">Technoloy</li>
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g.Research">
+                <button class="search-button" id="search-button">Seacrch</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="logo.png" alt="news-image" id="news-img" width="400px" height="200px">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the Title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 26/03/2025</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                    beatae suscipit voluptate, alias blanditiis commodi eveniet, ducimus mollitia quo, libero
+                    dignissimos saepe pariatur. Autem tempora natus cum quos earum officiis!</p>
+            </div>
+        </div>
+    </template>
+
+    <hr>
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Contact With Us</span>
+        </div>
+        <div class="contact-form">
+            <form method="post" action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="17067777-eb0c-4d4b-8039-e3b51331296e">
+                <input type="text" placeholder="Your Name" required name="name">
+                <input type="email" placeholder="Your Email" required name="email">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here...." required
+                    name="message"></textarea>
+                <input type="submit" value="send" class="contact-button">
+            </form>
+        </div>
+    </section>
+    <hr>
+    <section class="copyright">
+        <p> Create By
+        <h1>Sanchay Kumar Singh <img src="Screenshot_2025-02-25-12-35-03-20_680d03679600f7af0b4c700c6b270fe7.jpg"
+                width="20px" height="20px" alt=""></h1>|| 2025 <p class="big">&reg</p>
+        <p>All Right Reserved.</p>
+        </p>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
