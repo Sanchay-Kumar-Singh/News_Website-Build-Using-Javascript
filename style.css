@@ -10,6 +10,9 @@
     --accent-color:#2294ed;
     --accent-color-dark:#1d69a3;
 }
+.search-bars li a{
+  color:red;
+}
 body{
     font-family: "Poppins",sans-serif;
     color: var(--primary-text-color);
@@ -195,8 +198,48 @@ form textarea{
 }
 .copyright p{
     background-color: black;
+}.res{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 17px;
+}
+iframe{
+    width: 300px;
+    height: 400px;
+}.kl{
+    background-color:#4da2e3;
+}
+.rest h4{
+    margin-top: 7px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+      font-family: 'Times New Roman', Times, serif;
+}
+.kl h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.rest h4 a{
+  text-decoration: underline;
 }
 @media(max-width:700px) {
+    .res{
+        flex-direction: column;
+    }.card{
+        width: 100%;
+    }
+    .rest h4{
+        font-size: 28px;
+    }
+    .kl{
+        width: 100%;
+    }
     .sets{
         width: 50px;
         height: 50px;
